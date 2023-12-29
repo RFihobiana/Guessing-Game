@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Guessing Game</title>
+        <style type="text/css" media="all">
+            body {
+                display: flex;
+                height: 250px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            #heading {
+                font: bold 36px sans-serif;
+                margin: 0;
+            }
+            #container {
+                border: black 1px solid;
+                height: 1em;
+                width: 80%;
+            }
+            #range {
+                margin-left: 0%;
+                height: 1em;
+                width: 100%;
+                background-color: green;
+            }
+            #input {
+                display: block;
+                font-size: 24px;
+                width: 60%;
+                padding: 5px;
+            }
+            #playagain {
+                font-size: 24px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">I'm thinking of the number ...</h1>
+        <div id="container">
+            <div id="range"></div>
+        </div>
+        <input type="text" name="input" id="input" />
+        <button id="playagain" hidden onclick="location.search=''">Play Again</button>
+        <script src="guessing.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
